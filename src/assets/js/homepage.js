@@ -79,20 +79,20 @@ function openSignUp() {
 
 //Email Validation
 
-const signUpForm = document.getElementById('signup');
-const emailField = document.getElementById('emailField');
-const okButton = document.getElementById('okButton');
+// const signUpForm = document.getElementById('signup');
+// const emailField = document.getElementById('emailField');
+// const okButton = document.getElementById('okButton');
   
-emailField.addEventListener('keyup', function (event) {
-  isValidEmail = emailField.checkValidity();
+// emailField.addEventListener('keyup', function (event) {
+//   isValidEmail = emailField.checkValidity();
   
-  if ( isValidEmail ) {
-    okButton.disabled = false;
-  } else {
-    okButton.disabled = true;
-  }
-});
+//   if ( isValidEmail ) {
+//     okButton.disabled = false;
+//   } else {
+//     okButton.disabled = true;
+//   }
+// });
   
-okButton.addEventListener('click', function (event) {
-  signUpForm.submit();
-});
+// okButton.addEventListener('click', function (event) {
+//   signUpForm.submit();
+// });

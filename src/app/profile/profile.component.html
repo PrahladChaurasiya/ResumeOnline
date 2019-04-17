@@ -1,0 +1,127 @@
+<div>
+<!-- Header -->
+		
+		<!-- Top Nav -->
+		
+		<div class = "w3-card w3-bar w3-padding w3-white ">
+        <div style ="">
+          <a  class = "w3-bar-item w3-hover-text-red" routerLink="/**" routerLinkActive="active" >Home</a>
+          <a  class = "w3-bar-item w3-hover-text-red" routerLink="/templates" routerLinkActive="active">Templates</a>
+          <div class = "w3-right w3-bar-item w3-padding w3-padding-right">
+          <a class = "w3-blue w3-round w3-padding w3-margin-right" routerLink="/templates" routerLinkActive="active">Create Resume<i class = "fa fa-edit" style = "margin-left: 16px;"></i></a>
+          <a class = "w3-red w3-round w3-padding" routerLink="/**" routerLinkActive="active">Logout<i class = "fa fa-power-off" style = "margin-left: 16px; margin-right: 16px;"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Top Nav End -->
+      <div class="w3-sidebar w3-bar-block w3-collapse  w3-animate-left" style="width:300px;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="#" onclick = "javascript: openAccount(); return false;" class="w3-hover-light-grey w3-bar-item w3-button selected" id = "account-link">Account</a>
+        <a href="#" onclick = "javascript: openSavedResumes(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "saved-resumes-link">Saved Resumes</a>
+        <a href="#" onclick = "javascript: openPassword(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "password-link">Change Password</a>
+      </div>
+      <!-- Header End -->
+      
+      <!-- Content -->
+      <div class="w3-main w3-container" style="margin-left:285px">
+        <div class = "w3-white">
+          <button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+          
+        </div>
+        
+        <div class = " w3-round" style = "margin-top: 10px;">
+          <!-- Account -->
+          <div class = "w3-container" style = "height: 520px;" id = "account">
+            
+            <div class = "w3-container">
+            
+              <h4 class = "w3-text-red">Personal Details</h4>
+              <p>UserName: <span id = "username">Prahlad Chaurasiya</span></p>
+              <p>Email: <span id = "email">pchaurasiya@gmail.com</span></p>
+              <p>Phone no: <span id = "phoneno">+91 9383203223</span></p>
+              
+              <hr>
+              
+              <h4 class = "w3-text-red">Education Details</h4>
+              <p>10th Boards: <span id = "tenth-boards">97.8%</span></p>
+              <p>12th Boards: <span id = "twelfth-boards">99.98%</span></p>
+              <p>JEE Mains: <span id = "jee-mains">360/360</span></p>
+              
+              <hr>
+              
+              <h4 class = "w3-text-red">Training Details</h4>
+              <p>Big Data with Machine Learning</p>
+              <p>Android Development</p>
+            </div>
+            
+          </div>
+          <!-- Account End -->
+          
+          <!-- Saved Resumes -->
+          <div class = "w3-container" style = "display: none; height: 500px;" id = "saved-resumes">
+            <h4 class = "w3-text-red">Saved Resumes</h4>
+            
+            <div class = "w3-container">
+              <div class = "w3-third">
+                <div class = "w3-center">
+                  <p>Template 1</p>
+                  
+                  <div class = "w3-light-grey" style = "height: 300px; width: 70%; margin-left: auto; margin-right: auto;"></div>
+                </div>
+              </div>
+              
+              <div class = "w3-third">
+                <div class = "w3-center">
+                  <p>Template 2</p>
+                  
+                  <div class = "w3-light-grey" style = "height: 300px; width: 70%; margin-left: auto; margin-right: auto;"></div>
+                </div>
+              </div>
+              
+              <div class = "w3-third">
+                <div class = "w3-center">
+                  <p>Template 3</p>
+                  
+                  <div class = "w3-light-grey" style = "height: 300px; width: 70%; margin-left: auto; margin-right: auto;"></div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+          <!-- Saved Resumes End -->
+          
+          <!-- Password -->
+          <div class = "w3-container" style = "display: none; height: 500px;" id = "password">
+            <h4 class = "w3-text-red">Change Password</h4>
+            
+            <div class = "w3-container">
+              <p>Enter current password:</p>
+              <input type = "password" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+            
+              <p>Enter new password:</p>
+              <input type = "password" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+            
+              <p>Retype new password:</p>
+              <input type = "password" style = "width: 300px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+              <br/>
+              
+              <div class = "w3-margin-bottom">
+              <a href = "#" class = "w3-btn w3-red w3-round w3-margin-right">Change Password</a>
+              <a href = "#" class = "w3-btn w3-blue w3-round" onclick = "javascript: clearFields(); return false;">Reset Fields</a>
+              </div>
+            </div>
+          </div>
+          <!-- Password End -->
+        </div>
+        
+  
+        
+      </div>
+      <!-- Content End -->
+      
+      <!-- Footer -->
+      
+      <!-- Footer End -->
+</div>

@@ -10,18 +10,18 @@ function openLogin() {
 			}
 
 function openSignUp() {
-	
+
 				x = document.getElementById("signup-div");
 				x.style.display = "block";
 				var x = document.getElementById("login-div");
 				x.style.display = "none";
 				x = document.getElementById("forgot-password-div");
 				x.style.display = "none";
-				
+
 			}
-			
-			
-			
+
+
+
 			function openForgotPassword() {
 				var loginDiv = document.getElementById("login-div");
 				var signUpDiv = document.getElementById("signup-div");
@@ -31,20 +31,20 @@ function openSignUp() {
 				forgotPasswordDiv.style.display = "block";
 			}
 
-			// Fading Animation 
+			// Fading Animation
 
 			var animateHTML = function() {
 			var elems;
 			var windowHeight;
 			function init() {
-				
+
 				elems = document.querySelectorAll('.hidden');
 				windowHeight = window.innerHeight;
 				addEventHandlers();
 				checkPosition();
 			}
 			function addEventHandlers() {
-				
+
 				window.addEventListener('scroll', checkPosition);
 				window.addEventListener('resize', init);
 			}
@@ -76,23 +76,3 @@ function openSignUp() {
 				  document.getElementById('message').innerHTML = 'Passwords Not Matched ';
 				}
 			  }
-
-//Email Validation
-/*
-const signUpForm = document.getElementById('signup');
-const emailField = document.getElementById('emailField');
-const okButton = document.getElementById('okButton');
-  
-emailField.addEventListener('keyup', function (event) {
-  isValidEmail = emailField.checkValidity();
-  
-  if ( isValidEmail ) {
-    okButton.disabled = false;
-  } else {
-    okButton.disabled = true;
-  }
-});
-  
-okButton.addEventListener('click', function (event) {
-  signUpForm.submit();
-});*/

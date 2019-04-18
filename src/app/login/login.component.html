@@ -20,10 +20,10 @@
 
           <div style = "width: 70%; margin-left: auto; margin-right: auto;" class = "w3-white w3-round w3-padding-large w3-card-4 hidden ">
             <p style = "text-align: left;">Email </p>
-            <input placeholder = "Email" type = "text" class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required>
+            <input pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder = "Email" ngModel email = "true" type = "email" #user class = "w3-light-grey w3-padding w3-round w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required>
             <p style = "text-align: left;">Password</p>
-            <input placeholder = "Password" type = "password" class = "w3-padding w3-light-grey w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required> <br>
-            <button class = "w3-btn w3-blue w3-round w3-margin-top" style = "width: 100%;" type = "submit"><a>Login</a></button>
+            <input placeholder = "Password" type = "password" #pass class = "w3-padding w3-light-grey w3-text-grey w3-small" style = "border: 0px solid black; text-align: left; width: 100%;" required> <br>
+            <button class = "w3-btn w3-blue w3-round w3-margin-top" style = "width: 100%;" type = "submit" (click)="login(user,pass)"><a>Login</a></button>
 
 
               <a class = "w3-right w3-small w3-margin-top w3-hover-text-red" href = "#" onclick = "javascript: openForgotPassword(); return false;">Forgot password?</a>

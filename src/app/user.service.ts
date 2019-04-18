@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserService {
 
-  uri = 'http://localhost:4000/user';
+  uri = 'http://localhost:4000';
 
 
   constructor(private http: HttpClient) { }
@@ -18,7 +18,8 @@ addUser(username,email,password){
   };
 
   console.log(obj);
-  this.http.post(`${this.uri}/add`, obj)
+  
+  this.http.post(`${this.uri}/register`, obj)
   .subscribe(res => console.log('Done'));
 }
 

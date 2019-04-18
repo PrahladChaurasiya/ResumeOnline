@@ -1,10 +1,10 @@
 <div >
 
     	<!-- Header -->
-		
+
 		<!-- Top Nav -->
-		
-		<div class = "w3-bar w3-padding w3-white " style = "top: 0px; position: fixed; ">
+
+		<div class = "w3-bar w3-card-4 w3-padding w3-white " style = "top: 0px; position: fixed; z-index: 99;">
 			<div style="">
 				<a  class = "w3-bar-item w3-hover-text-red "routerLink="/**" routerLinkActive="active">Home</a>
 				<a  class = "w3-bar-item w3-hover-text-red" routerLink="/templates" routerLinkActive="active">Templates</a>
@@ -15,104 +15,105 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- Top Nav End -->
-		<div class="w3-sidebar w3-bar-block w3-collapse  w3-animate-left" style="top :60px; width:200px; position:fixed;" id="mySidebar">
-			<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
-			<a href="#" onclick = "javascript: openProfile(); return false;" class="w3-hover-light-grey w3-bar-item w3-button selected" id = "profile-link">Profile</a>
-			<a href="#" onclick = "javascript: openEducation(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "education-link">Education</a>
-			<a href="#" onclick = "javascript: openWork(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "work-link">Work</a>
-			<a href="#" onclick = "javascript: openSkills(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "skills-link">Skills</a>
-			<a href="#" onclick = "javascript: openAchievements(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "achievements-link">Achievements</a>
-			<a href="#" onclick = "javascript: openProjects(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "projects-link">Projects</a>
-		</div>
-		<!-- Header End -->
-		
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; margin-top: 52px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <a href="#" onclick = "javascript: openProfile(); return false;" class="w3-hover-light-grey w3-bar-item w3-button selected" id = "profile-link">Profile<i class = "w3-margin-right w3-large fas fa-user-circle w3-left"></i></a>
+  <a href="#" onclick = "javascript: openEducation(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "education-link">Education<i class = "w3-margin-right w3-large fas fa-book w3-left"></i></a>
+  <a href="#" onclick = "javascript: openWork(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "work-link">Work<i class = "w3-margin-right w3-large fas fa-briefcase w3-left"></i></a>
+  <a href="#" onclick = "javascript: openSkills(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "skills-link">Skills<i class = "w3-margin-right w3-large fas fa-crosshairs w3-left"></i></a>
+  <a href="#" onclick = "javascript: openAchievements(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "achievements-link">Achievements<i class = "w3-margin-right w3-large fas fa-trophy w3-left"></i></a>
+  <a href="#" onclick = "javascript: openProjects(); return false;"  class="w3-hover-light-grey w3-bar-item w3-button" id = "projects-link">Projects<i class = "w3-margin-right w3-large fas fa-code-branch w3-left"></i></a>
+</div>
+<!-- Header End -->
+
+
 		<!-- Content -->
-		
-		<div class="w3-main w3-container" style="margin-left:185px;">
+
+		<div class="w3-main w3-container" style="margin-left:220px;">
 			<div class = "w3-white">
 				<button class="w3-button w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
-				
+
 			</div>
-			
-			<div class = " w3-round" style = "margin-top: 60px;">
+
+			<div class = " w3-round w3-card" style = "margin-top: 70px;">
 				<!-- Profile -->
 				<div class = "w3-container" style = "min-height: 600px;" id = "profile">
 					<h4 class = "w3-text-red">Your Personal Info</h4>
 					<div class = "w3-container">
-					
-						
+
+
 					<div class="w3-half">
 						<p>Full Name:</p>
-						<input name ="fullname" type = "text" placeholder="e.g; FirstName LastName"style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+						<input name ="fullname" type = "text" placeholder="e.g; FirstName LastName"style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-small w3-small reset">
 					</div>
 					<div class="w3-half">
 						<p>Email:</p>
-						<input name = "email" type = "email" placeholder="e.g; example@mail.com" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
-					</div>	
+						<input name = "email" type = "email" placeholder="e.g; example@mail.com" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-small reset">
+					</div>
 					<div class="w3-half">
 						<p>Contact Number</p>
-						<input name = "contactnumber" type = "text" placeholder="e.g; 98xxxxxxxx"style = "width: 500px; border: 0px solid black;" class = "w3-contaienr w3-light-grey w3-padding reset">
+						<input name = "contactnumber" type = "text" placeholder="e.g; 98xxxxxxxx"style = "width: 500px; border: 0px solid black;" class = "w3-contaienr w3-light-grey w3-padding w3-small reset">
 					</div>
 					<div class="w3-half">
 						<p>Social Profile</p>
-						<input name = "socialprofile" type = "text" placeholder="e.g; https://www.linkedin.com/example"style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
-					</div>	
+						<input name = "socialprofile" type = "text" placeholder="e.g; https://www.linkedin.com/example"style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-small reset">
+					</div>
 					<div>
 						<p>Address:</p>
-						<input name = "address" type = "text" placeholder="e.g; 26,Baker Street,Bhopal,Madhya Pradesh"style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+						<input name = "address" type = "text" placeholder="e.g; 26,Baker Street,Bhopal,Madhya Pradesh"style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-small reset">
 					</div>
 					<br/>
 						<div class = "w3-margin-top">
 								<a href = "#" onclick = "javascript: openEducation(); return false;" class = "w3-btn w3-blue w3-round">Next<i class = "fa fa-arrow-right w3-margin-left"></i></a>
 						</div>
-						
+
 					</div>
-					
+
 				</div>
 				<!-- Profile End -->
-				
+
 				<!-- Education -->
 				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" disabled id = "education">
 					<h4 class = "w3-text-red">Education</h4>
-					
+
 					<p>Section </p>
-						<input type = "text" value="Education" style = "width: 1050px; border: 0px solid black;" disabled class = "w3-container w3-light-grey w3-padding reset">
-						
+						<input type = "text" value="Education" style = "width: 1050px; border: 0px solid black;" disabled class = "w3-container w3-light-grey w3-padding w3-small reset">
+
 
 					<div class = "w3-container" id="School">
 						<div class="w3-half">
 							<p>School Name</p>
-							<input name = "schoolname" type = "text" placeholder="e.g; Lakshmi Narain College Of Technology" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+							<input name = "schoolname" type = "text" placeholder="e.g; Lakshmi Narain College Of Technology" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-small reset">
 						</div>
 						<div class="w3-half">
 							<p>School Location</p>
-							<input name="schoollocation[]"type = "text" placeholder= "e.g; Bhopal" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+							<input name="schoollocation[]"type = "text" placeholder= "e.g; Bhopal" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-small reset">
 						</div>
 						<div class="w3-half">
 								<p>Degree</p>
-								<input name="degree[]"type = "text" placeholder="e.g; Bachelors of Engineering" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+								<input name="degree[]"type = "text" placeholder="e.g; Bachelors of Engineering" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-small reset">
 						</div>
 						<div class="w3-half">
 								<p>Major</p>
-								<input name="major[]"type = "text" placeholder="e.g; Computer Science "style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+								<input name="major[]"type = "text" placeholder="e.g; Computer Science "style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-small reset">
 						</div>
 						<div class="w3-half">
 								<p>Academic Session</p>
-								<input name="acedemicsession[]" type = "text" placeholder="e.g; July 2015 - June 2019 " style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+								<input name="acedemicsession[]" type = "text" placeholder="e.g; July 2015 - June 2019 " style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-small reset">
 						</div>
 						<div class="w3-half" >
 							<p>Score</p>
-							<input name="score[]"type = "text" placeholder="e.g; 8.5 or 85%" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding reset">
+							<input name="score[]"type = "text" placeholder="e.g; 8.5 or 85%" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-small reset">
 						</div>
-					
+
 						<div class="w3-margin-top">
-								<input class = "w3-btn w3-red w3-round " type="button" value="Add School" onclick="addSchool()">
+								<button class = "w3-btn w3-red w3-round w3-margin-top" type="button" onclick="addSchool()"><a>Add School</a></button>
 						</div>
-						
-						
-						
+
+
+
 					</div>
 					<br/>
 					<div class = "w3-margin-top">
@@ -121,39 +122,39 @@
 				</div>
 				</div>
 				<!-- Education End -->
-				
+
 				<!-- Work Experience-->
 				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" disabled id = "work">
 					<h4 class = "w3-text-red">Work</h4>
 						<p>Section Heading:</p>
-						<input type = "text" value="Work Experience" style = "width: 1050px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+						<input type = "text" value="Work Experience" style = "width: 1050px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 					<div class = "w3-container" id = "workexp">
 							<div class="w3-half">
 									<p>Company Name:</p>
-									<input name="companyname[]" type = "text" placeholder="e.g; Infosys Systems" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+									<input name="companyname[]" type = "text" placeholder="e.g; Infosys Systems" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 							</div>
 							<div class="w3-half">
 									<p>Job Title:</p>
-									<input name="jobtitle[]" type = "text" placeholder="e.g; Software Engineer" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+									<input name="jobtitle[]" type = "text" placeholder="e.g; Software Engineer" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 							</div>
 							<div class="w3-half">
 									<p>Job Location:</p>
-									<input name="joblocation" type = "text" placeholder="e.g; Bangalore" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+									<input name="joblocation" type = "text" placeholder="e.g; Bangalore" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 							</div>
 							<div class="w3-half">
 									<p>Job Summary:</p>
-									<input name="jobsummary[]" type = "text" placeholder="e.g; I worked on XYZ project and improved xx% of efficiency." style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
-									
+									<input name="jobsummary[]" type = "text" placeholder="e.g; I worked on XYZ project and improved xx% of efficiency." style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
+
 							</div>
 							<div class="w3-half">
 									<p>Start Date:</p>
-									<input name="jobstartdate[]" type = "text" placeholder="e.g; MM/YY" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+									<input name="jobstartdate[]" type = "text" placeholder="e.g; MM/YY" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 							</div>
 							<div class="w3-half">
 									<p>End Date:</p>
-									<input name="jobenddate[]" type = "text" placeholder="e.g; MM/YY" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+									<input name="jobenddate[]" type = "text" placeholder="e.g; MM/YY" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 							</div>
-						<input class = "w3-btn w3-red w3-round w3-margin-top " type="button" value="Add Work" onclick="addWork()">
+						<button class = "w3-btn w3-red w3-round w3-margin-top" type="button" onclick="addWork()"><a>Add Work</a></button>
 
 					</div>
 					<br/>
@@ -163,24 +164,24 @@
 				</div>
 				</div>
 				<!-- Work End -->
-				
+
 				<!-- Skills -->
 				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" id = "skills">
 					<h4 class = "w3-text-red">Skills</h4>
 					<p>Section Heading:</p>
-						<input type = "text" value="Skills" style = "width: 1050px; border: 0px solid black;" disabled class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+						<input type = "text" value="Skills" style = "width: 1050px; border: 0px solid black;" disabled class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 					<div class = "w3-container" id = "Skill">
 							<div class="w3-half">
 									<p>Skill Name:</p>
-									<input type = "text" placeholder="e.g; Programming Languages" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+									<input type = "text" placeholder="e.g; Programming Languages" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 							</div>
 							<div class="w3-half">
 									<p>Skill Details:</p>
-									<input type = "text" placeholder="e.g; Python" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+									<input type = "text" placeholder="e.g; Python" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 							</div>
-							<input class = "w3-btn w3-red w3-round w3-margin-top" type="button" value="Add Skill" onclick="addSkill()">
-						
-						
+							<button class = "w3-btn w3-red w3-round w3-margin-top" type="button" onclick="addSkill()"><a>Add Skill</a></button>
+
+
 
 					</div>
 					<br/>
@@ -196,26 +197,26 @@
 				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" id = "achievements">
 					<h4 class = "w3-text-red">Achievements</h4>
 					<p>Section Heading:</p>
-						<input type = "text" value="Awards & Achievements" disabled style = "width: 1050px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
-					
+						<input type = "text" value="Awards & Achievements" disabled style = "width: 1050px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
+
 					<div class = "w3-container" id = "Achievement">
 							<div class="w3-half">
 						<p>Achievement Name:</p>
-						<input name ="achivementname[]"type = "text" placeholder="e.g; Supreme Hacker" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+						<input name ="achivementname[]"type = "text" placeholder="e.g; Supreme Hacker" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 					</div>
 						<div class="w3-half">
 								<p>Awarder:</p>
-								<input name ="awarder[]" type = "text" placeholder="e.g; Hacker Tech." style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+								<input name ="awarder[]" type = "text" placeholder="e.g; Hacker Tech." style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 						</div>
 						<div class="w3-half">
 								<p>Achievement Date:</p>
-								<input name ="achivementdate[]" type = "text" placeholder="e.g; MM/YY" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+								<input name ="achivementdate[]" type = "text" placeholder="e.g; MM/YY" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 						</div>
 						<div class="w3-half">
 								<p>Summary:</p>
-								<input name ="achievementsummary[]" type = "text" placeholder="e.g; Recognised for making best project in Hackathon" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+								<input name ="achievementsummary[]" type = "text" placeholder="e.g; Recognised for making best project in Hackathon" style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 						</div>
-						<input class = "w3-btn w3-red w3-round w3-margin-top" type="button" value="Add Achievement" onclick="addAchievement()">
+						<button class = "w3-btn w3-red w3-round w3-margin-top" type="button" onclick="addAchievement()"><a>Add Achievement</a></button>
 					</div>
 					<br/>
 
@@ -226,28 +227,28 @@
 
 				</div>
 				<!-- Achievements End -->
-				
+
 				<!-- Projects -->
 				<div class = "w3-container" style = "display: none; min-height: 500px; padding-bottom: 50px;" id = "projects">
 					<h4 class = "w3-text-red">Projects</h4>
 						<p>Section Heading:</p>
-						<input type = "text" placeholder = "Projects" disabled style = "width: 1050px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
-					
+						<input type = "text" placeholder = "Projects" disabled style = "width: 1050px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
+
 					<div class = "w3-container" id = "Project">
 							<div class="w3-half">
 									<p>Project Name:</p>
-									<input name="projectname[]"type = "text" placeholder="e.g; Resume Online " style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+									<input name="projectname[]"type = "text" placeholder="e.g; Resume Online " style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 							</div>
 							<div class="w3-half">
 									<p>Project Date:</p>
-									<input name="projectdate[]"type = "text" placeholder="e.g; MM/YY"style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+									<input name="projectdate[]"type = "text" placeholder="e.g; MM/YY"style = "width: 500px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 							</div>
 							<div>
 									<p>Project Details:</p>
-									<input name="projectdetails[]"type = "text" placeholder="e.g; A web application for resume desingning."style = "width: 1050px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom reset">
+									<input name="projectdetails[]"type = "text" placeholder="e.g; A web application for resume desingning."style = "width: 1050px; border: 0px solid black;" class = "w3-container w3-light-grey w3-padding w3-margin-bottom w3-small reset">
 							</div>
-							<input class = "w3-btn w3-red w3-round w3-margin-top" type="button" value="Add Project" onclick="addProject()">
-					
+							<button class = "w3-btn w3-red w3-round w3-margin-top" type="button" onclick="addProject()"><a>Add Project</a></button>
+
 					</div>
 					<br/>
 
@@ -258,9 +259,9 @@
 				</div>
 				<!-- Projects End -->
 			</div>
-		
 
-			
+
+
 		</div>
-  
+
   </div>

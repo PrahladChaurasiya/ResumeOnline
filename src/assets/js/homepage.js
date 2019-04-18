@@ -78,7 +78,7 @@ function openSignUp() {
 			  }
 
 //Email Validation
-
+/*
 const signUpForm = document.getElementById('signup');
 const emailField = document.getElementById('emailField');
 const okButton = document.getElementById('okButton');
@@ -95,4 +95,4 @@ emailField.addEventListener('keyup', function (event) {
   
 okButton.addEventListener('click', function (event) {
   signUpForm.submit();
-});
+});*/

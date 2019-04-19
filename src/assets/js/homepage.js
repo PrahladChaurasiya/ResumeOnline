@@ -77,11 +77,11 @@ function openSignUp() {
 				}
 			  }
 
-//Email Validation
+// //Email Validation
 
-// const signUpForm = document.getElementById('signup');
-// const emailField = document.getElementById('emailField');
-// const okButton = document.getElementById('okButton');
+// // const signUpForm = document.getElementById('signup');
+// // const emailField = document.getElementById('emailField');
+//  const okButton = document.getElementById('okButton');
   
 // emailField.addEventListener('keyup', function (event) {
 //   isValidEmail = emailField.checkValidity();

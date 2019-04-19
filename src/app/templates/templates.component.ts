@@ -11,7 +11,7 @@ export class TemplatesComponent implements OnInit {
 
   ngOnInit() {
     this.loadScript('../assets/js/homepage.js');
-    
+
   }
   public loadScript(url: string) {
     const body = <HTMLDivElement> document.body;
@@ -23,4 +23,14 @@ export class TemplatesComponent implements OnInit {
     body.appendChild(script);
   }
 
+  public openModal(src: string) {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'block';
+    var image = <HTMLImageElement>document.querySelector('#img');
+    image.src = src;
+  }
+  public hideModal() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'none';
+  }
 }

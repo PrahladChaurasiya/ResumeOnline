@@ -62,7 +62,7 @@ education(schoolname,schoollocation,degree,major,academicsession,score){
   this.educationarr.push(educationdtls);
 }
 
-addeducation(educationarr){
+addeducation(){
   this.obj["education"]=this.educationarr;
   console.log(this.obj);
 }
@@ -105,9 +105,10 @@ achievementdtls.push(achievementdate);
 achievementdtls.push(achievementsummary);
 this.achievementarr.push(achievementdtls);
 
+
 }
-addachievement(achievementarr){
-  this.obj["achievements"]=achievementarr;
+addachievement(){
+  this.obj["achievements"]=this.achievementarr;
   console.log(this.obj);
 
 }
@@ -122,7 +123,7 @@ this.achievementarr.splice(id,1);
   this.skillarr.push(skilldetails);
   }
 
-  addskill(skilldtls){
+  addskill(){
     this.obj["skill"]=this.skillarr;
     console.log(this.obj);
   }

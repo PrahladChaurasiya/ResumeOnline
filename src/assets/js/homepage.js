@@ -76,7 +76,7 @@ function openSignUp() {
 				  document.getElementById('message').innerHTML = 'Passwords Not Matched ';
 				}
 			  }
-<<<<<<< HEAD
+
 
 // //Email Validation
 
@@ -97,5 +97,4 @@ function openSignUp() {
 // okButton.addEventListener('click', function (event) {
 //   signUpForm.submit();
 // });
-=======
->>>>>>> ba4e2657b998acd84d4979a48e2fd50d9d693e0f
+

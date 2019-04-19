@@ -26,16 +26,9 @@ export class TemplatesComponent implements OnInit {
   public openModal(src: string) {
     var modal = document.getElementById('modal');
     modal.style.display = 'block';
-<<<<<<< HEAD
     var image = <HTMLImageElement>document.querySelector('#img');
     image.src = src;
   }
-=======
-    var image = document.getElementById('img');
-    image.src = src;
-  }
-
->>>>>>> ba4e2657b998acd84d4979a48e2fd50d9d693e0f
   public hideModal() {
     var modal = document.getElementById('modal');
     modal.style.display = 'none';

@@ -18,9 +18,9 @@ const userRoute = require('./routes/user.route');
         console.log('Listening on port ' + port);
     });
 
-    
 
-    
+
+
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
@@ -44,7 +44,7 @@ db.collection('registration').findOne(query, function(err, result){
         res.send(JSON.stringify("True"));
         console.log("found");
     }
-   }) 
+   })
   })
 });
 
@@ -61,7 +61,7 @@ app.post('/register', function(req, res){
           });
           res.send(JSON.stringify("True"));
           }
-          else 
+          else
           {
             console.log('Found!');
             res.send(JSON.stringify("False"));

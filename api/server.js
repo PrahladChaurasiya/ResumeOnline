@@ -20,7 +20,11 @@ const userRoute = require('./routes/user.route');
 
 
 
-
+app.post('/generate', (req,res) =>{
+    console.log("generate");
+    var obj = req.body;
+    console.log(obj);
+} )
 
 app.get('/', (req, res) => {
     res.send('Hello World!')

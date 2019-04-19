@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormService} from '../form.service';
+import { Observable } from 'rxjs';
+import { HttpClient,HttpHeaders } from '@angular/common/http';
 
 
 @Component({
@@ -9,7 +11,7 @@ import {FormService} from '../form.service';
 })
 export class Form1Component implements OnInit {
 
-  constructor(private fs : FormService) { }
+  constructor(private fs : FormService, private http:HttpClient) { }
    
 
   ngOnInit() {
@@ -42,8 +44,7 @@ export class Form1Component implements OnInit {
     this.obj["address"]=address;
   
     console.log(this.obj);
-    //  this.http.post(`${this.uri}/addResume`, this.obj)
-    //  .subscribe(res => console.log('Done'));
+      
   }
 
 
@@ -149,4 +150,23 @@ removeproject(id){
 
 }
 
+public postToServer(): Observable<Object>{
+
+  let headers = new HttpHeaders();
+  headers.append('Content-Type', 'application/json')
+  let options = { headers: headers };
+   
+  this.http.post("http://localhost:4000/generate", this.obj, options).subscribe(() =>{
+    console.log("hello");
+  })
+
+  return ;
+
 }
+
+
+
+
+
+}
+

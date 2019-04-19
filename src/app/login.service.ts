@@ -20,7 +20,7 @@ export class LoginService {
     }
     let headers = new HttpHeaders();
     headers.append('Content-Type', 'application/json')
-  let options = { headers: headers };
+    let options = { headers: headers };
 
     return this.http.post<string>('http://localhost:4000/login',data,options);
   }

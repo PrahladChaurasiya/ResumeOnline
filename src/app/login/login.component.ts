@@ -3,7 +3,7 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import {UserService} from '../user.service';
 import { LoginService } from '../login.service';
 import {Router } from '@angular/router';
-import { routerNgProbeToken } from '@angular/router/src/router_module';
+
 
 @Component({
   selector: 'app-login',
@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
     
     console.log("hello "+user1+" "+pass1);
     this.logi.getHostElement(user1,pass1).subscribe((data) => {
-      if(data == "True"){
+      if(data != "False"){
         this.router.navigate(['/templates']);
       }
       else{

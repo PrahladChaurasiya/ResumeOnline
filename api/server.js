@@ -19,13 +19,6 @@ const userRoute = require('./routes/user.route');
     });
 
 
-
-app.post('/generate', (req,res) =>{
-    console.log("generate");
-    var obj = req.body;
-    console.log(obj);
-} )
-
 app.get('/', (req, res) => {
     res.send('Hello World!')
     console.log("hello");
@@ -45,8 +38,8 @@ db.collection('registration').findOne(query, function(err, result){
         console.log("not found");
     }
     else{
-        res.send(JSON.stringify("True"));
-        console.log("found");
+        res.send(JSON.stringify(result._id));
+        console.log('Found');
     }
    })
   })
@@ -73,6 +66,20 @@ app.post('/register', function(req, res){
         })
       })
     });
+
+    app.post('/generate', function(req, res){
+        MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true } , function(err, client){
+            var db = client.db('resume');
+            db.collection("resumeDetials").countDocuments({'id':4},function(err, result){
+                if(err) throw new Error(err);
+                var data=req.body;
+                data.id=4;
+                data.resumeID=result+1;
+                  db.collection('resumeDetials').insertOne(data);
+                  res.send('Successful');
+              });
+           })
+        })
 
     // res.send(JSON.stringify({
     //     status : "user exists",
